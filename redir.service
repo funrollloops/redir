@@ -1,0 +1,11 @@
+[Unit]
+Description=redir service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/sagarm/code/redir/redir
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
